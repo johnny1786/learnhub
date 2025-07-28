@@ -2,7 +2,7 @@ import { tracks } from "@/data/tracks";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-export default function TrackPage({ params }: { params: { slug: string } }) {
+export default function TrackPage({ params, }: { params: { slug: string }; }) {
   const track = tracks.find((t) => t.slug === params.slug);
 
   if (!track) return notFound();
