@@ -2,7 +2,7 @@ import { tracks } from "@/data/tracks";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
-export default function TrackPage({
+export default async function TrackPage({
   params,
 }: {
   params: { slug: string };
